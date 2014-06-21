@@ -5,6 +5,7 @@ module.exports = function(config) {
 		, files: [
 			'app/lib/onsen/js/angular/angular.js'
 			, 'app/lib/onsen/js/angular/angular-*.js'
+			, 'app/lib/onsen/js/onsenui.js'
 			, 'test/lib/angular/angular-mocks.js'
 			, 'app/js/**/*.js'
 			, 'test/unit/**/*.js'
@@ -14,7 +15,8 @@ module.exports = function(config) {
 
 		, autoWatch: true
 
-		, browsers: ['PhantomJS']
+		//, browsers: ['PhantomJS']
+		, browsers: ['Chrome']
 
 		, junitReporter: {
 			outputFile: 'test_out/unit.xml'
