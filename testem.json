@@ -1,0 +1,10 @@
+{
+    "src_files": [
+        "app/lib/onsen/js/angular/angular.js",
+        "app/lib/onsen/js/angular/angular-*.js",
+        "app/lib/onsen/js/onsenui.js",
+        "test/lib/angular/angular-mocks.js",
+        "app/js/**/*.js",
+        "test/unit/**/*.js"
+    ]
+}
