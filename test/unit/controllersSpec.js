@@ -3,14 +3,18 @@
 /* jasmine specs for controllers go here */
 
 describe('controllers', function(){
-  beforeEach(module('myApp'));
 
+	var scope
 
-  it('should ....', inject(function() {
-    //spec body
-  }));
+	beforeEach(module('myApp'))
 
-  it('should ....', inject(function() {
-    //spec body
-  }));
+	beforeEach(inject(function ($rootScope) {
+		scope = $rootScope.$new()
+	}))
+
+  it('should have a TaskListCtrl', inject(function($controller) {
+  	var taskListCtrl = $controller('TaskListCtrl', { $scope: scope })
+  	expect(taskListCtrl).toBeDefined()
+		expect(scope.tasks.length).toBe(5)
+  }))
 });
